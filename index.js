@@ -16,7 +16,7 @@ const ipromptQA = ([
 {
   type: 'input',
   name: 'proInst',
-  message: 'Please specify installation instructions?'
+  message: 'What are the installation instructions? Please separate new lines with a "," '
 },
 {
   type: 'input',
@@ -24,9 +24,9 @@ const ipromptQA = ([
   message: 'Please describe how your project is used.'
 },
 {
-  type: 'input',
+  type: 'confirm',
   name: 'proContr',
-  message: 'How to contribute'
+  message: 'Would you like to add contributing guidelines?'
 },
 {
   type: 'input',
@@ -36,18 +36,18 @@ const ipromptQA = ([
 {
   type: 'input',
   name: 'proUser',
-  message: 'Tests'
+  message: 'Please add your github user name'
 },
 {
   type: 'input',
-  name: 'proQuest',
-  message: 'Tests'
+  name: 'proEmail',
+  message: 'Please add your email address'
 },
 {
-  type: 'checkbox',
+  type: 'list',
   name: 'proLicense',
   message: 'What licenses will you be using?',
-  choices: ['MIT', 'OSL 3.0', 'MPL 2.0']
+  choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'None']
 }
 ]);
 
@@ -60,6 +60,8 @@ if(err) throw err;
 console.log('Your README file has been created');
 });
 };
+
+
 
 function inquireQA() {
   inquirer.prompt(ipromptQA)
