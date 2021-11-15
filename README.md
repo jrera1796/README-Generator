@@ -7,7 +7,7 @@
   [Description](#Description)<br>
   [Installation](#Installation)<br>
   [Usage](#Usage)<br>
-  [Contributing Guidelines](#Contributing-Guidelines)
+  [Contributing Guidelines](#Contributing-Guidelines)<br>
   [License](#License)<br>
 
   ## Description
