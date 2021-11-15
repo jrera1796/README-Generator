@@ -21,7 +21,7 @@ return (`
   [Installation](#Installation)<br>
   [Usage](#Usage)<br>
   [Contributing Guidelines](#Contributing-Guidelines)
-
+  [License](#License)
   ## Description
   ### ${answers.proDesc}
 

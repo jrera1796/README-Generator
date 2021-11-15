@@ -8,6 +8,7 @@
   [Installation](#Installation)<br>
   [Usage](#Usage)<br>
   [Contributing Guidelines](#Contributing-Guidelines)
+  [License](#License)
 
   ## Description
   ### README Generator simplifies the process of creating a readme.md file for your projects.
