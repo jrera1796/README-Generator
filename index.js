@@ -1,6 +1,7 @@
 const fs = require('fs');
 const rmGenerate = require('./src/rmGenerate.js');
 const inquirer = require('inquirer');
+let testarr = [];
 
 const ipromptQA = ([
 {
@@ -16,7 +17,37 @@ const ipromptQA = ([
 {
   type: 'input',
   name: 'proInst',
-  message: 'What are the installation instructions? Please separate new lines with a "," '
+  message: 'What are the installation instructions? Please separate new lines with a comma "," '
+},
+{
+  type: 'confirm',
+  name: 'proMedia',
+  message: 'Will you be adding any media?',
+  default: false
+},
+{
+  type: 'confirm',
+  name: 'proMediaY',
+  message: 'Is your media located in the root directory?',
+  when: answers => answers.proMedia === true
+},
+{
+  type: 'input',
+  name: 'proMediaFileRoot',
+  message: 'What is the name of this file? Please include file type (ie ".img")',
+  when: answers => answers.proMediaY ===true
+},
+{
+  type: 'input',
+  name: 'proMediaPath',
+  message: 'What is the name of the folder that contains your media file? Currently only one adjacent folder containing the media is supported.',
+  when: answers => answers.proMediaY === false
+},
+{
+  type: 'input',
+  name: 'proMediaFilePath',
+  message: 'What is the name of this file? Please include file type (ie ".img")',
+  when: answers => answers.proMediaPath
 },
 {
   type: 'input',
@@ -29,9 +60,18 @@ const ipromptQA = ([
   message: 'Would you like to add contributing guidelines?'
 },
 {
-  type: 'input',
+  type: 'confirm',
   name: 'proTestIns',
-  message: 'Tests'
+  message: 'Are there any tests that need to be listed?',
+  
+},
+{
+  type: 'input',
+  name: 'proTestIns2',
+  message: 'Please enter your tests and seperate new lines with a comma "," ',
+  when: answers => answers.proTestIns === true,
+  
+  
 },
 {
   type: 'input',
