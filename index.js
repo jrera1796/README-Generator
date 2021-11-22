@@ -1,7 +1,7 @@
 const fs = require('fs');
 const rmGenerate = require('./src/rmGenerate.js');
 const inquirer = require('inquirer');
-let testarr = [];
+
 
 const ipromptQA = ([
 {
@@ -12,7 +12,7 @@ const ipromptQA = ([
 {
   type: 'input',
   name: 'proDesc',
-  message: 'Please write a description about your project?'
+  message: 'Please write a description about your project?',
 },
 {
   type: 'input',
