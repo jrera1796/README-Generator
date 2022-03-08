@@ -2,7 +2,6 @@ const fs = require('fs');
 const rmGenerate = require('./src/rmGenerate.js');
 const inquirer = require('inquirer');
 
-
 const ipromptQA = ([
 {
   type: 'input',
@@ -105,7 +104,7 @@ console.log('Your README file has been created');
 
 function inquireQA() {
   inquirer.prompt(ipromptQA)
-  .then(answers => fileMaker('README.md', rmGenerate(answers)))
+  .then(answers => fileMaker('./output/README.md', rmGenerate(answers)))
   
   .catch((err) => {
     if(err) throw err
