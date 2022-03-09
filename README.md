@@ -1,7 +1,7 @@
 
-## [![license](https://img.shields.io/badge/License-BSD-yellow.svg)](https://opensource.org/licenses/BSD-3-Clause)
+## [![license](https://img.shields.io/badge/License-BSD-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  # sdg
+  # Simplified-README-Build
   <br>
 
   ## Table of Contents
@@ -16,28 +16,29 @@
   <br>
 
   ## Description
-  ### dsf
+  ### This repository demonstrates how this code can simplify making a readme file.
 
   <br>
 
   ## Installation
-  ### dsaf
+  ### Clone this repository
+  - Run npm install
 
   <br>
 
   ## Walkthrough Video
-  https://drive.google.com/file/d/1EZufQU8QS0GNDFXSvAw2ZzxT_7BUnN_V/view
+  https://drive.google.com/file/d/1lIxaRtMxq1urw1wxRmOOL2U1ClL3QOr5/view
 
   <br>
 
   ## Usage
-  ### fds
+  ### NA
 
   <br>
 
   ## License
-  BSD-3-Clause <br>
-  Link:  https://opensource.org/licenses/BSD-3-Clause 
+  MIT<br>
+  Link:  https://opensource.org/licenses/MIT
 
   <br>
 
@@ -47,14 +48,14 @@
   <br>
 
   ## Tests
-  ### 
+  ### No Tests
 
   <br>
   
   ## Questions
   For any questions please feel free to contact me via one of the methods below.
 
-  ### Github: Github.com/
-  ### Email: 
+  ### Github: Github.com/jrera1796
+  ### Email: RiveraJose1796@gmail.com
   
   
